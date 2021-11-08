@@ -34,6 +34,7 @@ const pesquisarImagens = async(evento) =>{
         carregarStatus(imagens,pesquisa);
     }
 }
+
 const criarItem = item =>{
     const container = document.querySelector("#container-galeria");
     const newCard =document.createElement("div");
@@ -62,4 +63,4 @@ const criarItem = item =>{
 const carregarGaleria = imagens => imagens.forEach(criarItem);
 
 document.querySelector("#pesquisa").addEventListener("keypress", pesquisarImagens);
-document.querySelector(".categorias").addEventListener("slected", pesquisarImagens);
+document.querySelector(".categorias").addEventListener("selected", pesquisarImagens);
