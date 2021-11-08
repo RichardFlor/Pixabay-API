@@ -1,42 +1,29 @@
 <!DOCTYPE html>
-<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="icon" type="image/png" sizes="15x15" href="img/pixabay-icon.png">
+    <link rel="icon" type="image/png" sizes="15x15" href="img/icon.png">
     <script src="script.js" defer></script>
-    <title>Pixabay API</title>
+    <title>Pixabay</title>
 </head>
-<body class="column">
+<body>
     <header>
-        <div class="centralizar">
-            <img class="logo" src="img/logo.png">
-            <div class="container-pesquisa row">
-                <img src="img/search-240.png" id="LupaPesquisa">
-                <input id="pesquisa" type="text" placeholder="Buscar">
-                <select class="row categorias">
+            <img class="logo"src="img/logo.PNG">
+            <div class="container-pesquisa">
+                <input id="pesquisa" type="text" placeholder="Procurar">
+                <img src="img/search-240.png" id="searchName">
+                <select class="categorias">
                     <option value="all">Imagens</option>
                     <option value="photo">Fotos</option>
                     <option value="vector">Imagens Vetoriais</option>
                     <option value="illustration">Ilustrações</option>
                 </select>
             </div>
-        </div>
     </header>
-    <section id="container-categorias">
-
-        <div class="popular">
-
-        </div>
-        <div class="itens">
-
-        </div>
-    </section>
-    <main class="column">
-        <div class="centralizar">
-            <div class="status">
-            </div>
+    <main>
+        <div class="status">
+               
         </div>
          <div id="container-galeria">
              
