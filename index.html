@@ -1,36 +1,101 @@
 <!DOCTYPE html>
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="icon" type="image/png" sizes="15x15" href="img/icon.png">
+    <link rel="icon" type="image/png" href="img/pixabayicone.png">
     <script src="script.js" defer></script>
-    <title>Pixabay</title>
+    <title>Pixabay API</title>
 </head>
-<body>
+<body class="column">
     <header>
+        <div class="centralizar">
             <img class="logo"src="img/logo.PNG">
-            <div class="container-pesquisa">
-                <input id="pesquisa" type="text" placeholder="Procurar">
-                <img src="img/search-240.png" id="searchName">
-                <select class="categorias">
-                    <option value="all">Imagens</option>
-                    <option value="photo">Fotos</option>
-                    <option value="vector">Imagens Vetoriais</option>
-                    <option value="illustration">Ilustrações</option>
-                </select>
+            <div class="container-pesquisa row">
+                <img src="img/lupa.png">
+                <input id="pesquisa" type="text" placeholder="Buscar">
+                <div class="categorias">
+                    <select class="row busca-avancada" id="categorias">
+                        <option id="imagem" value="imagens.all">Imagens</option>
+                        <option id="imagem" value="imagens.photo">Fotos</option>
+                        <option id="imagem" value="imagens.vector">Imagens Vetoriais</option>
+                        <option id="imagem" value="imagens.illustration">Ilustrações</option>
+                        <option id="video" value="videos.all">Video</option>
+                    </select>
+                     <img class="seta icon-navegar" src="img/setaDireita.png">
+                </div>
             </div>
+        </div>
     </header>
-    <main>
-        <div class="status">
-               
+    <section id="container-categorias">
+        <div class="centralizar">
+            <div class="pesquisa-avancada">
+                <div class="busca-avancada destaque row">
+                    <select id="order" class="font-destaque">
+                        <option id="" value="popular">Popular</option>
+                        <option id="" value="latest">Recente</option>
+                    </select>
+                    <img class="seta" src="img/setabaixo.png">
+                </div>
+                <div class="busca-avancada row orientacao">
+                    <select id="orientation" class="row">
+                        <option>Orientação</option>
+                        <option>Qualquer</option>
+                        <option>Vertical</option>
+                        <option>Horizontal</option>
+                    </select>
+                    <img class="seta" src="img/setabaixo.png">
+                </div>
+                <div class="busca-avancada row">
+                    <select id="category" class="row">
+                        <option>Categoria</option>
+                        <option>Animais</option>
+                        <option>Computador</option>
+                        <option>Comida</option>
+                        <option>Esportes</option>
+                        <option>Edifícios</option>
+                        <option>Musica</option>
+                    </select>
+                    <img class="seta" src="img/setabaixo.png">
+                </div>
+                <div class="busca-avancada row cor">
+                    <select id="color" class="row">
+                        <option>Algumas   Cores</option>
+                        <option>Transparente</option>
+                        <option>Preto e Branco</option>
+                        <option>Vermelho</option>
+                        <option>Azul</option>
+                        <option>Amarelo</option>
+                        <option>Verde</option>
+                        <option>Turquesa</option>
+                        <option>Rosa</option>
+                        <option>Laranja</option>
+                        <option>Branco</option>
+                    </select>
+                    <img class="seta"src="img/setabaixo.png">  
+                </div>
+                <div class="paginacao">
+                    <button id="anterior" class="btn-navegar">
+                        <img class = "icon-navegar"src="img/setaEsquerda.png">
+                    </button>
+                    <input class="pagina"type="text" value="1" id="pagina">
+                    <div id="quantPaginas"><p></p></div>
+                    <button id="proximo" class="btn-navegar">
+                        <img class="icon-navegar"src="img/setaDireita.png">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <main class="column">
+        <div class="centralizar">
+            <div class="status">
+            </div>
         </div>
          <div id="container-galeria">
              
          </div>   
     </main>
-    <footer>
-        Copyright &copy; 2021 | Richard Flor
-    </footer>
 </body>
 </html>
