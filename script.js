@@ -59,7 +59,7 @@ const pesquisarImagens = async(pesquisa) =>{
         //recebendo tipo de busca (video ou image) e dirretório video
         const busca = tipoBusca();
         //url json pixabay
-        const url = `https://pixabay.com/api/${busca[1]}?key=23670717-85b5103b3d880933d4e67c566&q=${pesquisa}&lang=pt&${busca[0]}&per_page=20&page=${pagina}&order=${ordernar}&orientation=${orientacao}&category=${categoria}&colors=${cor}`;
+        const url = `https://pixabay.com/api/${busca[1]}?key=24371704-1335075e3bf0463dfb60b30c5&q=${pesquisa}&lang=pt&${busca[0]}&per_page=20&page=${pagina}&order=${ordernar}&orientation=${orientacao}&category=${categoria}&colors=${cor}`;
         //fazendo requisição
         const response = await fetch(url);
         //Extraindo json
